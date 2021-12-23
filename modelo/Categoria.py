@@ -8,4 +8,4 @@ class Categoria:
     
     @nivel.setter
     def nivel(self, nivel):
-        self._nivel=nivel
+        self._nivel = nivel

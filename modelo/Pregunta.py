@@ -2,7 +2,7 @@ class Pregunta:
     def __init__(self, descripcion, dificultad, opciones) -> None:
         self._descripcion=descripcion
         self._dificultad=dificultad
-        self._opciones=opciones
+        self._opciones=list(opciones)
 
     @property
     def descripcion(self):
