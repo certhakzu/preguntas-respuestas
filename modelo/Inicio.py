@@ -94,12 +94,20 @@ class Inicio:
                     preguntas.append(input(f'Escriba Pregunta {i + 1}: '))
                     # Guardar en PERSITENCIA
                     opciones = list()
+                    validas = list()
                     for j in range(4):
                         opciones.append(input(f'Opción {j + 1}: '))
+                        swValida=input(f'Esla Correcta? (1:SI / 2:NO): ')
+                        if swValida == 1:
+                            validas.append(True)
+                        else:
+                            validas.append(False)
                     listaOpciones.append(opciones)
 
                 print(preguntas)
                 print(listaOpciones)
+                print(validas)
+                
             else:
                 print(f'OK REGRESANDO AL MENÚ PRINCIPAL Presione ENTER para continuar...')
                 input()
