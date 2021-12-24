@@ -1,7 +1,10 @@
+import Categoria
+
+
 class Pregunta:
     def __init__(self, descripcion, dificultad, opciones) -> None:
         self._descripcion=descripcion
-        self._dificultad=dificultad
+        self._dificultad=Categoria(dificultad)
         self._opciones=list(opciones)
 
     @property

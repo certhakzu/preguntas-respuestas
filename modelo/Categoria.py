@@ -1,6 +1,10 @@
+import Premio
+
+
 class Categoria:
-    def __init__(self, nivel) -> None:
+    def __init__(self, nivel, premio) -> None:
         self._nivel=nivel
+        self._premio= Premio.valor
 
     @property
     def nivel(self):
